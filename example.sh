@@ -69,7 +69,7 @@ dscl . -create /Groups/FV2user PrimaryGroupID "$usergroup"
 # Create the new user, hide it and add it to the group
 
 dscl . -create /Users/$newuser
-dscl . -create /Users/$newuser UserShell /bin/nologin
+dscl . -create /Users/$newuser UserShell /sbin/nologin
 dscl . -create /Users/$newuser RealName "$newuser"
 dscl . -create /Users/$newuser UniqueID "$useruid"
 dscl . -create /Users/$newuser PrimaryGroupID "$groupuid"
